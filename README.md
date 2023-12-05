@@ -1,4 +1,4 @@
-# Examen-Tema-2
+# Examen-Tema-3
 
 _Para completar mi código he utilizado el Copilot de Github en la versión de VSCode, ya que esta ofrece el chat, lo que me ha permitido interactuar con la ia y así completar mi codigo de la mejor manera posible, además para completar y resolver los errores que el codigo me ha ofrecido he usado el Copilot de Github en Clion, el cuál ofrece una alterantiva al codigo recibido y así maneja los errores, también he usado el ChatGPT para diferentes arreglos. Para el markdown del readme he utilizado el documento que ofrece Github acerca de su sintáxis._
 ## Parte 1: Preguntas de elección múltiple
