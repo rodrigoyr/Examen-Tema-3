@@ -10,11 +10,34 @@ public:
         variables[name] = value;
     }
 
+    void removeVariable(const std::string& name) {
+        auto it = variables.find(name);
+        if (it != variables.end()) {
+            variables.erase(it);
+        }
+    }
+
+    bool variableExists(const std::string& name) const {
+        return variables.find(name) != variables.end();
+    }
+
+    void printEnvironment() const {
+        std::cout << "Environment Variables:\n";
+        for (const auto& entry : variables) {
+            std::cout << entry.first << ": ";
+            std::visit([](const auto& value) {
+                std::cout << value;
+            }, entry.second);
+            std::cout << std::endl;
+        }
+    }
+
     std::variant<int, double, std::string> getVariable(const std::string& name) const {
         auto it = variables.find(name);
         if (it != variables.end()) {
             return it->second;
         } else {
+            // Valor predeterminado si la variable no está definida
             return std::variant<int, double, std::string>{};
         }
     }
@@ -30,9 +53,17 @@ int main() {
     env.setVariable("doubleVar", 3.14);
     env.setVariable("stringVar", "Hello, World!");
 
-    std::cout << "integerVar: " << std::get<int>(env.getVariable("integerVar")) << std::endl;
-    std::cout << "doubleVar: " << std::get<double>(env.getVariable("doubleVar")) << std::endl;
-    std::cout << "stringVar: " << std::get<std::string>(env.getVariable("stringVar")) << std::endl;
+    env.printEnvironment();
+
+    env.removeVariable("doubleVar");
+
+    if (env.variableExists("doubleVar")) {
+        std::cout << "doubleVar exists.\n";
+    } else {
+        std::cout << "doubleVar does not exist.\n";
+    }
+
+    env.printEnvironment();
 
     return 0;
 }
