@@ -37,6 +37,18 @@ public:
 
         std::cout << "¡Comencemos, " << playerName << "!\n";
         displayGameInfo();
+
+        performGameAction();
+    }
+
+private:
+    Environment environment;
+
+    std::string getPlayerName() const {
+        std::string playerName;
+        std::cout << "Ingrese su nombre de jugador: ";
+        std::cin >> playerName;
+        return playerName;
     }
 
     void customizeGameEnvironment() {
@@ -52,14 +64,15 @@ public:
         std::cout << "Dificultad: " << std::get<std::string>(environment.getVariable("gameDifficulty")) << "\n";
     }
 
-private:
-    Environment environment;
+    void performGameAction() {
+        std::cout << "\n¡Te encuentras con un enemigo!\n";
+        int enemyHealth = std::get<int>(environment.getVariable("enemyHealth"));
 
-    std::string getPlayerName() const {
-        std::string playerName;
-        std::cout << "Ingrese su nombre de jugador: ";
-        std::cin >> playerName;
-        return playerName;
+        std::cout << "¡Enemigo derrotado! La salud restante del enemigo es: " << enemyHealth << "\n";
+
+        environment.setVariable("enemyHealth", enemyHealth);
+
+        displayGameInfo();
     }
 };
 
