@@ -34,5 +34,10 @@ En este código se implementa la clase Enviroment con un contenedor que nombra v
 Este código implementa la clase  que gestiona un entorno de variables con valores enteros, dobles o de cadena. En el programa , se crea lentorno, se establecen las variables, se imprime y luego se elimina una variable (doubleVar), se verifica si existe y se vuelve a imprimir el entorno.
 
 **Ejercicio 7.** 
+En este código se crea un minijuego de aventuras. El juego permite personalizar el entorno, encuentros con enemigos y descubrimientos de tesoros, y finalmente, muestra la información del jugador y lo felicita por ganar.
+
+**Ejercicio 8.** 
+En este ejercicio simplemente realizo mejoras el los demás códigos como así pide el enunciado.
 
 **Ejercicio final.** 
+En este codigo final uno todos los códigos realizados utilizando las partes importantes de cada codigo dentro de la clase envoronment y el entorno, finalmente realizo mejoras al darme el codigo errores al unirlo todo a la vez. Este codigo muestra  un Sistema de Scripting para Motor de Videojuegos Indie con sus estructura basica de la clase, el insertar y buscar símbolos, la gestión de errores, la integración con variant, las funcionalidades, los usos y las mejoras finales como así indico en la descripción de cada ejercicio.
