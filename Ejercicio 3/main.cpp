@@ -43,7 +43,7 @@ int main() {
     std::cout << "Valor de y: " << env.lookupSymbol("y") << std::endl;
     std::cout << "Valor de z: " << env.lookupSymbol("z") << std::endl;
 
-    std::cout << "Valor de w: " << env.lookupSymbol("w") << std::endl; // Debería imprimir un mensaje de advertencia y 0 por defecto
+    std::cout << "Valor de w: " << env.lookupSymbol("w") << std::endl;
 
     return 0;
 }
