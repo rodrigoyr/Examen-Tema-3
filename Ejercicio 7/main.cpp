@@ -16,6 +16,7 @@ public:
         if (it != variables.end()) {
             return it->second;
         } else {
+            // Valor predeterminado si la variable no está definida
             return std::variant<int, double, std::string>{};
         }
     }
@@ -38,7 +39,9 @@ public:
         std::cout << "¡Comencemos, " << playerName << "!\n";
         displayGameInfo();
 
-        performGameAction();
+        performGameActions();
+
+        std::cout << "¡Enhorabuena, has ganado!\n";
     }
 
 private:
@@ -64,13 +67,29 @@ private:
         std::cout << "Dificultad: " << std::get<std::string>(environment.getVariable("gameDifficulty")) << "\n";
     }
 
-    void performGameAction() {
-        std::cout << "\n¡Te encuentras con un enemigo!\n";
-        int enemyHealth = std::get<int>(environment.getVariable("enemyHealth"));
+    void performGameActions() {
+        performGameAction("Encuentro con un enemigo");
+        performGameAction("Descubrimiento de un tesoro");
+    }
 
-        std::cout << "¡Enemigo derrotado! La salud restante del enemigo es: " << enemyHealth << "\n";
+    void performGameAction(const std::string& actionName) {
+        std::cout << "\n" << actionName << "!\n";
 
-        environment.setVariable("enemyHealth", enemyHealth);
+        if (actionName == "Encuentro con un enemigo") {
+            int enemyHealth = std::get<int>(environment.getVariable("enemyHealth"));
+            // Realiza acciones de combate y actualiza la salud del enemigo
+            // ...
+
+            std::cout << "¡Enemigo derrotado! La salud restante del enemigo es: " << enemyHealth << "\n";
+            // Actualiza la variable en el entorno
+            environment.setVariable("enemyHealth", enemyHealth);
+        } else if (actionName == "Descubrimiento de un tesoro") {
+            int playerCoins = std::get<int>(environment.getVariable("playerCoins"));
+
+
+            std::cout << "¡Has encontrado un tesoro! Monedas obtenidas: " << playerCoins << "\n";
+            environment.setVariable("playerCoins", playerCoins);
+        }
 
         displayGameInfo();
     }
