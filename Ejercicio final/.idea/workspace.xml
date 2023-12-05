@@ -20,14 +20,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="374c73ec-3b26-47e7-a72e-d7fcf93df990" name="Changes" comment="adding game code commit">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ejercicio_final.dir/main.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Ejercicio_final.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="374c73ec-3b26-47e7-a72e-d7fcf93df990" name="Changes" comment="final code commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701771758469</updated>
-      <workItem from="1701771759837" duration="381000" />
+      <workItem from="1701771759837" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -107,7 +100,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701771985944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding game code commit">
+      <option name="closed" value="true" />
+      <created>1701772147572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701772147572</updated>
+    </task>
+    <task id="LOCAL-00004" summary="improving final code commit">
+      <option name="closed" value="true" />
+      <created>1701772286596</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701772286596</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final code commit">
+      <option name="closed" value="true" />
+      <created>1701772438204</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701772438204</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +140,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="joining codes commit" />
     <MESSAGE value="adding game code commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding game code commit" />
+    <MESSAGE value="improving final code commit" />
+    <MESSAGE value="final code commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final code commit" />
   </component>
 </project>
