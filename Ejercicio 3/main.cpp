@@ -20,14 +20,14 @@ public:
         }
     }
 
-    int lookupSymbol(const std::string& name) const {
+    int lookupSymbol(const std::string& name, int defaultValue = 0) const {
         auto it = symbolTable.find(name);
 
         if (it != symbolTable.end()) {
             return it->second;
         } else {
-            std::cerr << "Advertencia: El símbolo '" << name << "' no está definido en el entorno. Se devuelve el valor predeterminado 0." << std::endl;
-            return 0;
+            std::cerr << "Advertencia: El símbolo '" << name << "' no está definido en el entorno. Se devuelve el valor predeterminado: " << defaultValue << "." << std::endl;
+            return defaultValue; // Valor predeterminado si el símbolo no está definido
         }
     }
 };
@@ -42,8 +42,7 @@ int main() {
     std::cout << "Valor de x: " << env.lookupSymbol("x") << std::endl;
     std::cout << "Valor de y: " << env.lookupSymbol("y") << std::endl;
     std::cout << "Valor de z: " << env.lookupSymbol("z") << std::endl;
-
     std::cout << "Valor de w: " << env.lookupSymbol("w") << std::endl;
-
+    std::cout << "Valor de w: " << env.lookupSymbol("w", 100) << std::endl;
     return 0;
 }
