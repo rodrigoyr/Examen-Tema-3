@@ -49,7 +49,7 @@ int main() {
 
         env.insertSymbol("x", 50);
     } catch (const std::exception& e) {
-        std::cerr << "Excepción: " << e.what() << std::endl;
+        std::cerr << "Excepcion: " << e.what() << std::endl;
     }
 
     return 0;
