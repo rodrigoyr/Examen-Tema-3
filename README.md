@@ -19,7 +19,7 @@ c) Parsea un objeto JSON a un objeto Variant
 Este código implementa una clase environment con una tabla de símbolos que asigna nombres a numeros enteros. El programa  crea un entorno, agrega símbolos con numeros y luego imprime esos numeros. Si se intenta obtener el valor de un símbolo que no existe , se imprime un mensaje de error y se devuelve 0.
 
 **Ejercicio 2.**
-
+Este código también implementa la clase environment con una tabla de símbolos que asigna nombres a numeros. Este programa crea un entorno, agrega símbolos  con numeros y luego los imprime. Si se inserta dos numeros iguales, salta una advertencia.
 **Ejercicio 3.**
 
 **Ejercicio 4.** 
