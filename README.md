@@ -31,6 +31,7 @@ Este código implementa la clase environment con los símbolos y numeros. En el 
 En este código se implementa la clase Enviroment con un contenedor que nombra variables que pueden ser de tipo entero, doble o cadena. En el programa, se crea el entorno, se establecen variables con diferentesvalores y luego se obtienen y se imprimen los valores con std::get y getVariable.
 
 **Ejercicio 6.**
+Este código implementa la clase  que gestiona un entorno de variables con valores enteros, dobles o de cadena. En el programa , se crea lentorno, se establecen las variables, se imprime y luego se elimina una variable (doubleVar), se verifica si existe y se vuelve a imprimir el entorno.
 
 **Ejercicio 7.** 
 
