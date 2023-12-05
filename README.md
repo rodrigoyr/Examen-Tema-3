@@ -20,9 +20,12 @@ Este código implementa una clase environment con una tabla de símbolos que asi
 
 **Ejercicio 2.**
 Este código también implementa la clase environment con una tabla de símbolos que asigna nombres a numeros. Este programa crea un entorno, agrega símbolos  con numeros y luego los imprime. Si se inserta dos numeros iguales, salta una advertencia.
+
 **Ejercicio 3.**
+Este código implementa la misma con los mimos símbolos y números que antes. El programa crea un entorno, agrega símbolos con numeros y luego imprime esos numeroscon la función lookupSymbol. Si un símbolo no está, salta una advertencia y se devuelve un valor predeterminado (0 de normal).
 
 **Ejercicio 4.** 
+
 
 **Ejercicio 5.** 
 
