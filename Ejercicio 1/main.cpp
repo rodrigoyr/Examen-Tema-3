@@ -21,7 +21,7 @@ public:
         if (it != symbolTable.end()) {
             return it->second;
         } else {
-            std::cerr << "Error: El símbolo '" << name << "' no está definido." << std::endl;
+            std::cerr << "Error: El simbolo '" << name << "' no esta definido." << std::endl;
             return 0; // Valor predeterminado en caso de error
         }
     }
