@@ -1,4 +1,5 @@
 #include <iostream>
+#include <exception>
 #include <map>
 #include <string>
 #include <stdexcept>
