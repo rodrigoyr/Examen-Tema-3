@@ -4,11 +4,9 @@
 
 class Environment {
 public:
-
     using SymbolTable = std::map<std::string, std::variant<int, double, std::string>>;
 
     void insert(const std::string& name, const std::variant<int, double, std::string>& value) {
-
         auto it = symbols.find(name);
         if (it != symbols.end()) {
             if (it->second != value) {
@@ -26,6 +24,14 @@ public:
         } else {
             throw std::runtime_error("Error: El símbolo no existe en el entorno.");
         }
+    }
+
+    void remove(const std::string& name) {
+        symbols.erase(name);
+    }
+
+    bool exists(const std::string& name) const {
+        return symbols.find(name) != symbols.end();
     }
 
     void printSymbols() const {
@@ -58,29 +64,19 @@ private:
 void encounterEnemy(Environment& env) {
     std::cout << "\n¡Te encuentras con un enemigo!\n";
     int enemyHealth = std::get<int>(env.lookup("enemyHealth"));
-
     std::cout << "¡Enemigo derrotado! La salud restante del enemigo es: " << enemyHealth << "\n";
-
     env.insert("enemyHealth", enemyHealth);
-
     env.incrementWins();
 }
 
 int main() {
     Environment env;
-
-
     env.insert("playerName", "John");
     env.insert("playerLevel", 5);
-
     env.customizeGameEnvironment();
-
     env.printSymbols();
-
     encounterEnemy(env);
-
     env.printSymbols();
-
     std::cout << "\n¡Enhorabuena, has ganado!\n";
 
     return 0;
