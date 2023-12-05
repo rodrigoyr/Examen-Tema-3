@@ -14,9 +14,9 @@ public:
         auto result = symbolTable.insert({name, value});
 
         if (result.second) {
-            std::cout << "Símbolo '" << name << "' insertado correctamente." << std::endl;
+            std::cout << "Simbolo '" << name << "' insertado correctamente." << std::endl;
         } else {
-            std::cerr << "Advertencia: El símbolo '" << name << "' ya existe en el entorno. No se ha realizado la inserción." << std::endl;
+            std::cerr << "Advertencia: El simbolo '" << name << "' ya existe en el entorno. No se ha realizado la insercion." << std::endl;
         }
     }
 
