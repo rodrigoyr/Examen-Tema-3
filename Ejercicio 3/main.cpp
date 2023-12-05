@@ -26,8 +26,8 @@ public:
         if (it != symbolTable.end()) {
             return it->second;
         } else {
-            std::cerr << "Advertencia: El símbolo '" << name << "' no está definido en el entorno. Se devuelve el valor predeterminado: " << defaultValue << "." << std::endl;
-            return defaultValue; // Valor predeterminado si el símbolo no está definido
+            std::cerr << "Advertencia: El simbolo '" << name << "' no esta definido en el entorno. Se devuelve el valor predeterminado: " << defaultValue << "." << std::endl;
+            return defaultValue;
         }
     }
 };
