@@ -22,10 +22,10 @@ Este código implementa una clase environment con una tabla de símbolos que asi
 Este código también implementa la clase environment con una tabla de símbolos que asigna nombres a numeros. Este programa crea un entorno, agrega símbolos  con numeros y luego los imprime. Si se inserta dos numeros iguales, salta una advertencia.
 
 **Ejercicio 3.**
-Este código implementa la misma con los mimos símbolos y números que antes. El programa crea un entorno, agrega símbolos con numeros y luego imprime esos numeroscon la función lookupSymbol. Si un símbolo no está, salta una advertencia y se devuelve un valor predeterminado (0 de normal).
+Este código implementa la misma con los mismos símbolos y números que antes. El programa crea un entorno, agrega símbolos con numeros y luego imprime esos numeroscon la función lookupSymbol. Si un símbolo no está, salta una advertencia y se devuelve un valor predeterminado (0 de normal).
 
 **Ejercicio 4.** 
-
+Este código implementa la clase environment con los símbolos y numeros. En el codigo , se crea un entorno, se agregan símbolos con números y se imprime esos numeros con la función lookupSymbol. Si se mete un símbolo que ya existe, salta una excepción de tipo std::invalid_argument y un bloque catch para imprimir un error. Si se intenta buscar un símbolo que no está, se lanza una excepción de tipo std::out_of_range` y salta el mensaje de error.
 
 **Ejercicio 5.** 
 
