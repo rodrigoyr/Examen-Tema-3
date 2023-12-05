@@ -19,7 +19,7 @@ c) Parsea un objeto JSON a un objeto Variant
 Este código implementa una clase environment con una tabla de símbolos que asigna nombres a numeros enteros. El programa  crea un entorno, agrega símbolos con numeros y luego imprime esos numeros. Si se intenta obtener el valor de un símbolo que no existe , se imprime un mensaje de error y se devuelve 0.
 
 **Ejercicio 2.**
-Este código también implementa la clase environment con una tabla de símbolos que asigna nombres a numeros. Este programa crea un entorno, agrega símbolos  con numeros y luego los imprime. Si se inserta dos numeros iguales, salta una advertencia.
+Esn este código también se implementa la clase environment con una tabla de símbolos que asigna nombres a numeros. Este programa crea un entorno, agrega símbolos  con numeros y luego los imprime. Si se inserta dos numeros iguales, salta una advertencia.
 
 **Ejercicio 3.**
 Este código implementa la misma con los mismos símbolos y números que antes. El programa crea un entorno, agrega símbolos con numeros y luego imprime esos numeroscon la función lookupSymbol. Si un símbolo no está, salta una advertencia y se devuelve un valor predeterminado (0 de normal).
@@ -28,6 +28,7 @@ Este código implementa la misma con los mismos símbolos y números que antes. 
 Este código implementa la clase environment con los símbolos y numeros. En el codigo , se crea un entorno, se agregan símbolos con números y se imprime esos numeros con la función lookupSymbol. Si se mete un símbolo que ya existe, salta una excepción de tipo std::invalid_argument y un bloque catch para imprimir un error. Si se intenta buscar un símbolo que no está, se lanza una excepción de tipo std::out_of_range` y salta el mensaje de error.
 
 **Ejercicio 5.** 
+En este código se implementa la clase Enviroment con un contenedor que nombra variables que pueden ser de tipo entero, doble o cadena. En el programa, se crea el entorno, se establecen variables con diferentesvalores y luego se obtienen y se imprimen los valores con std::get y getVariable.
 
 **Ejercicio 6.**
 
