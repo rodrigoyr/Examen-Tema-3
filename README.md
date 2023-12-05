@@ -16,6 +16,7 @@ c) Parsea un objeto JSON a un objeto Variant
 
 ## Parte 2: Pregunta de desarrollo de código: Sistema de Scripting para Motor de Videojuegos Indie
 **Ejercicio 1.**
+Este código implementa una clase environment con una tabla de símbolos que asigna nombres a numeros enteros. El programa  crea un entorno, agrega símbolos con numeros y luego imprime esos numeros. Si se intenta obtener el valor de un símbolo que no existe , se imprime un mensaje de error y se devuelve 0.
 
 **Ejercicio 2.**
 
