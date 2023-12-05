@@ -1,5 +1,6 @@
 #include <iostream>
 #include <variant>
+#include <unordered_map>
 
 class Environment {
 public:
@@ -29,6 +30,7 @@ int main() {
     env.setVariable("doubleVar", 3.14);
     env.setVariable("stringVar", "Hello, World!");
 
+    // Obtener valores de variables
     std::cout << "integerVar: " << std::get<int>(env.getVariable("integerVar")) << std::endl;
     std::cout << "doubleVar: " << std::get<double>(env.getVariable("doubleVar")) << std::endl;
     std::cout << "stringVar: " << std::get<std::string>(env.getVariable("stringVar")) << std::endl;
