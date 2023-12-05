@@ -10,7 +10,7 @@ public:
         auto it = symbols.find(name);
         if (it != symbols.end()) {
             if (it->second != value) {
-                throw std::runtime_error("Error: El símbolo ya existe con un valor diferente.");
+                throw std::runtime_error("Error: El simbolo ya existe con un valor diferente.");
             }
         } else {
             symbols[name] = value;
@@ -22,7 +22,7 @@ public:
         if (it != symbols.end()) {
             return it->second;
         } else {
-            throw std::runtime_error("Error: El símbolo no existe en el entorno.");
+            throw std::runtime_error("Error: El simbolo no existe en el entorno.");
         }
     }
 
@@ -35,7 +35,7 @@ public:
     }
 
     void printSymbols() const {
-        std::cout << "Tabla de Símbolos:\n";
+        std::cout << "Tabla de Simbolos:\n";
         for (const auto& entry : symbols) {
             std::cout << entry.first << ": ";
             std::visit([](const auto& value) {
@@ -77,7 +77,7 @@ int main() {
     env.printSymbols();
     encounterEnemy(env);
     env.printSymbols();
-    std::cout << "\n¡Enhorabuena, has ganado!\n";
+    std::cout << "\n¡Enhorabuena, has ganado, eres un campeonn!\n";
 
     return 0;
 }
