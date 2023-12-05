@@ -13,7 +13,7 @@ public:
         if (result.second) {
             std::cout << "Símbolo '" << name << "' insertado correctamente." << std::endl;
         } else {
-            std::cerr << "Advertencia: El símbolo '" << name << "' ya existe en el entorno. No se ha realizado la inserción." << std::endl;
+            std::cerr << "Advertencia: El simbolo '" << name << "' ya existe en el entorno. No se ha realizado la insercion." << std::endl;
         }
     }
 
@@ -23,7 +23,7 @@ public:
         if (it != symbolTable.end()) {
             return it->second;
         } else {
-            std::cerr << "Error: El símbolo '" << name << "' no está definido." << std::endl;
+            std::cerr << "Error: El simbolo '" << name << "' no esta definido." << std::endl;
             return 0;
         }
     }
